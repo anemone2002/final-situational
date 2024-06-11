@@ -1,0 +1,169 @@
+
+  
+  .centered-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  
+  
+  .contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: start;
+    margin-bottom: 20px;
+    
+  }
+  
+  .contact-info {
+    flex-basis: 50%;
+    padding-right: 20px;
+  }
+  
+  .body-1-xl {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #333;
+    max-width: 100%;
+    width: 400px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-chat {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-chat .chat-icon {
+    width: 55px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+  
+  .contact-chat .heading-1-xl {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #444;
+    margin-top: 10px;
+  }
+  
+  .contact-chat p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .email-link {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .email-link a {
+    position: relative; 
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #000000;
+  }
+  
+  .email-link a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -5px; 
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+  }
+  
+  .email-link a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .email-link img {
+    width: 5%;
+  }
+  
+  .email-icon {
+    width: 20px;
+    margin-right: 8px;
+  }
+  
+  .email-link a:hover .email-text {
+    text-decoration: underline;
+  }
+  
+  .form-conatct {
+    flex-basis: 50%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+   .form-chat  {
+    margin-bottom: 20px;
+  }
+  
+  .form-chat  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .form-chat input {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 1rem;
+  }
+  
+  .form-chat.d-flex {
+    display: flex;
+  }
+  
+  .form-chat.d-flex .mr-2 {
+    margin-right: 10px;
+  }
+  
+  input::placeholder {
+    color: #aaa;
+    text-align: center;
+  }
+  
+  .form-chat input[name='message'] {
+    width: 100%;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    font-size: 1rem;
+  }
+  
+
+  @media (max-width: 768px) {
+    .contact {
+      flex-direction: column;
+    }
+  
+    .contact-info,
+    form {
+      max-width: 100%;
+      width: 100%;
+    }
+  
+    form {
+      margin-top: 20px;
+    }
+  }
+  
